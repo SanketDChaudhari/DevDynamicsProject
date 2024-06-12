@@ -100,4 +100,4 @@ This Inventory Management System allows administrators to manage products in an 
 - **Description:** Retrieves the contents of a customer's cart.
 
 ## Postman Collection
-You can import the provided Postman collection to easily test the API endpoints. Download and import the collection from [here](your-postman-collection-link).
+You can import the provided Postman collection to easily test the API endpoints. Download and import the collection from [here](https://github.com/SanketDChaudhari/DevDynamicsProject/blob/main/Sanket_Chaudhari_DevDynamics.postman_collection.json).
