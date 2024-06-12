@@ -3,6 +3,8 @@
 ## Overview
 This Inventory Management System allows administrators to manage products in an e-commerce store's inventory, handle customers' shopping carts, and apply discount coupons.
 
+**API URL:** [13.233.115.100:8000](http://13.233.115.100:8000)
+
 ## Features
 - Add and remove items from inventory
 - Add items to a customer's cart
@@ -101,3 +103,22 @@ This Inventory Management System allows administrators to manage products in an 
 
 ## Postman Collection
 You can import the provided Postman collection to easily test the API endpoints. Download and import the collection from [here](https://github.com/SanketDChaudhari/DevDynamicsProject/blob/main/Sanket_Chaudhari_DevDynamics.postman_collection.json).
+
+## Docker Instructions
+
+### Dockerfile
+
+Create a `Dockerfile` in the root of your project directory with the following content:
+
+```dockerfile
+# Use the official OpenJDK 17 image as a base image
+FROM openjdk:17-jdk-alpine
+
+# Set the argument for the JAR file name
+ARG JAR_FILE=target/*.jar
+
+# Copy the JAR file to the container
+COPY ${JAR_FILE} app.jar
+
+# Specify the entry point to run the JAR file
+ENTRYPOINT ["java","-jar","/app.jar"]
