@@ -43,7 +43,7 @@ This Inventory Management System allows administrators to manage products in an 
     ```
 
 4. **Access the application:**
-    Open your browser and navigate to `http://localhost:8080`.
+    Open postman and navigate to `[http://13.233.115.100:8000](http://13.233.115.100:8000)`.
 
 ## API Endpoints
 
